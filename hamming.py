@@ -154,7 +154,7 @@ for bucle in bitsDeVerificacion:
 if(esValido):
     print("\n\tNo se detectaron errores")
     print("Trama codificada  enviada: \t", ubicaciones)
-    print("Trama codificada recibida recibida: \t", datosRecibidos) 
+    print("Trama codificada recibida: \t", datosRecibidos) 
 else:
     #En esta parte se analiza porque se ha detectado algun error.
     print("\n\tSe ha identificado un error")
@@ -167,7 +167,7 @@ else:
 
     print(f"El error se encuentra en el bit #({posError})")
     print("Por lo tanto se debe corregir el error. Se tiene lo siguiente: ")
-    print("Trama codificada  enviada: \t", ubicaciones)
+    print("Trama     codificada      enviada: \t", ubicaciones)
     print("Trama codificada erronea recibida: \t", listaDeDatosRecibidos)
 
     #Se corrige el error:
@@ -177,7 +177,7 @@ else:
         listaDeDatosRecibidos[posError-1] = 1
 
     #Ahora ya se encuentra corregido el error.
-    print("Trama codificada corregida: \t", listaDeDatosRecibidos)
+    print("Trama     codificada    corregida: \t", listaDeDatosRecibidos)
 
 print("-------------------------------------------------------------------------------------")
 
