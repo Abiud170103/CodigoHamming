@@ -19,7 +19,7 @@ for bucle in range(0, len(datosEnLista)):
 
 #Tamano de la lista
 m = len(datosEnLista)
-#En esta lista se colocan las posiciones de paridad e informaciones
+#En esta lista se colocan las posiciones de los bits de paridad e informaciones
 ubicaciones = []
 #En esta lista se colocan los bits de la posicion de la informacion
 bitsDePosicionInfo = []
@@ -153,8 +153,8 @@ for bucle in bitsDeVerificacion:
 #Se identifca el error en caso que sea falso o sino se confirma que esta bien la informacon en caso que sea verdadero
 if(esValido):
     print("\n\tNo se detectaron errores")
-    print("Codificacón original enviada: \t", ubicaciones)
-    print("Codificación recibida: \t", datosRecibidos) 
+    print("Trama codificada  enviada: \t", ubicaciones)
+    print("Trama codificada recibida recibida: \t", datosRecibidos) 
 else:
     #En esta parte se analiza porque se ha detectado algun error.
     print("\n\tSe ha identificado un error")
@@ -167,8 +167,8 @@ else:
 
     print(f"El error se encuentra en el bit #({posError})")
     print("Por lo tanto se debe corregir el error. Se tiene lo siguiente: ")
-    print("Codificacón original enviada: \t", ubicaciones)
-    print("Codificacion erronea recibida: \t", listaDeDatosRecibidos)
+    print("Trama codificada  enviada: \t", ubicaciones)
+    print("Trama codificada erronea recibida: \t", listaDeDatosRecibidos)
 
     #Se corrige el error:
     if(listaDeDatosRecibidos[posError -1] == 1):
@@ -177,7 +177,7 @@ else:
         listaDeDatosRecibidos[posError-1] = 1
 
     #Ahora ya se encuentra corregido el error.
-    print("Codificacion corregida: \t", listaDeDatosRecibidos)
+    print("Trama codificada corregida: \t", listaDeDatosRecibidos)
 
 print("-------------------------------------------------------------------------------------")
 
