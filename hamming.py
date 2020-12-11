@@ -84,7 +84,7 @@ for bucleUno in range(0, filasAContar):
 
 #Ahora se agregan todos los bits de paridad e informacion en sus respectivas posiciones
 #En esta lista ['P', 'P', 'I', 'P', 'I', 'I', 'I']. (Se la cambia por los bits correspondientes.)
-contadorGeneral = 0
+contadorGeneral = 0   #bintDeparidad = [1,0,1] datos de la lista = [1,0,1,0]
 nContadorDeParidad = 0
 nContadorDeInfo = 0
 for nuevoBucle in ubicaciones:
@@ -111,7 +111,7 @@ for bucle in range(0, len(listaDeDatosRecibidos)):
     listaDeDatosRecibidos[bucle] = int(listaDeDatosRecibidos[bucle]) #Se cambia la lista a numeros enteros
 
 #Se crea una lista que tiene los numeros binarios de todo el hamming
-todosBinarios = []
+todosBinarios = [] #[11, 101, 111,]
 
 for numBinario in range(1, len(ubicaciones)+1):
     todosBinarios.append(bin(numBinario)[2:])
@@ -159,7 +159,7 @@ else:
     #En esta parte se analiza porque se ha detectado algun error.
     print("\n\tSe ha identificado un error")
     posError = ""
-
+        
     for bucle in bitsDeVerificacion:
         posError += str(bucle)
 
