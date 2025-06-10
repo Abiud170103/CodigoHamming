@@ -19,7 +19,7 @@ for bucle in range(0, len(datosEnLista)):
 
 #Tamano de la lista
 m = len(datosEnLista)
-#En esta lista se colocan las posiciones de los bits de paridad e informaciones
+#En esta lista se colocan las posiciones de los bits de paridad e informacion
 ubicaciones = []
 #En esta lista se colocan los bits de la posicion de la informacion
 bitsDePosicionInfo = []
@@ -180,7 +180,3 @@ else:
     print("Trama     codificada    corregida: \t", listaDeDatosRecibidos)
 
 print("-------------------------------------------------------------------------------------")
-
-
-
-
