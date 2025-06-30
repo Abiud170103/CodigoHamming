@@ -16,7 +16,6 @@ datosEnLista = list(datosEntrada)
 #Se cambia a int los numeros de la lista que estan como string
 for bucle in range(0, len(datosEnLista)):
     datosEnLista[bucle] = int(datosEnLista[bucle])
-
 #Tamano de la lista
 m = len(datosEnLista)
 #En esta lista se colocan las posiciones de los bits de paridad e informacion
